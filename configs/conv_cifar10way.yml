@@ -1,0 +1,16 @@
+# Dataset parameters
+dataset: cifar100
+root_dir: './datasets'
+
+num_way: 10
+num_shot: 5
+target_num_way: 15
+
+# Training parameters
+optimizer: adam # Desired optimizer - must exist in build_graph()
+learning_rate: 3e-4
+total_steps: 1501
+retraining_steps: 1000
+
+# Model parameters
+model_name: ConvModel

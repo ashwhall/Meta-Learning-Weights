@@ -1,0 +1,17 @@
+# Dataset parameters
+dataset: cifar100
+root_dir: './datasets'
+
+source_num_way: 10
+num_shot: 5
+target_num_way: 15
+# Number of models held out for validation
+validation_model_percent: 0.1
+# Training parameters
+optimizer: adam # Desired optimizer - must exist in build_graph()
+learning_rate: 3e-4
+total_steps: 1501
+meta_learner_training_steps: 1000
+
+# Model parameters
+model_name: MetaLearner

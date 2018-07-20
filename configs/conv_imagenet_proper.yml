@@ -1,0 +1,19 @@
+# Dataset parameters
+dataset: miniimagenet
+root_dir: './datasets'
+cache_images: False
+
+num_shot: 5
+source_num_way: 10
+target_num_way: 15
+
+validation_model_percent: 0.1
+
+# Training parameters
+optimizer: adam # Desired optimizer - must exist in build_graph()
+learning_rate: 3e-2
+total_steps: 3500
+meta_learner_training_steps: 5001
+
+# Model parameters
+model_name: MetaLearner
